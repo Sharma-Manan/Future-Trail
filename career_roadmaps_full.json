@@ -1,0 +1,509 @@
+[
+  {
+    "role": "Full-Stack Developer",
+    "skills": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Node.js",
+      "React",
+      "Next.js",
+      "Angular",
+      "MongoDB",
+      "Docker",
+      "TypeScript"
+    ],
+    "tools": [
+      "VS Code",
+      "Postman",
+      "MongoDB Compass",
+      "Docker",
+      "GitHub"
+    ],
+    "learning_path": [
+      "Start with HTML and CSS to build static web pages",
+      "Learn JavaScript to add interactivity to web pages",
+      "Pick a frontend framework like React or Angular",
+      "Learn backend basics using Node.js and Express",
+      "Work with databases like MongoDB",
+      "Understand how Docker helps with containerization",
+      "Learn TypeScript for writing safer JavaScript code",
+      "Practice building full-stack apps with frontend + backend + database",
+      "Deploy your app using services like Vercel or Render"
+    ]
+  },
+  {
+    "role": "Java Developer",
+    "skills": [
+      "Java",
+      "OOPs",
+      "Spring Boot"
+    ],
+    "tools": [
+      "Eclipse",
+      "IntelliJ IDEA",
+      "Postman",
+      "Maven"
+    ],
+    "learning_path": [
+      "Learn core Java and object-oriented programming concepts",
+      "Understand data structures and algorithms in Java",
+      "Explore Java collections, threads, and exception handling",
+      "Build REST APIs using Spring Boot",
+      "Practice CRUD operations and database integration",
+      "Work on Java-based web applications",
+      "Understand version control using Git",
+      "Create and deploy sample backend apps"
+    ]
+  },
+  {
+    "role": "Computer Support Specialist",
+    "skills": [
+      "Troubleshooting",
+      "Hardware",
+      "Software",
+      "Networking"
+    ],
+    "tools": [
+      "Remote Desktop Tools",
+      "Diagnostic Software",
+      "Ticketing Systems"
+    ],
+    "learning_path": [
+      "Understand computer hardware and operating systems",
+      "Learn basic software troubleshooting and installations",
+      "Study networking fundamentals and protocols",
+      "Practice diagnosing and fixing common issues",
+      "Learn to use remote tools and ticketing systems",
+      "Obtain certifications like IBM IT Support",
+      "Explore roles such as Help Desk Technician or IT Associate"
+    ]
+  },
+  {
+    "role": "Cybersecurity Analyst",
+    "skills": [
+      "Network Security",
+      "Ethical Hacking",
+      "Encryption",
+      "Incident Response"
+    ],
+    "tools": [
+      "Firewalls",
+      "Antivirus Software",
+      "Kali Linux",
+      "Metasploit",
+      "John the Ripper",
+      "Nikto"
+    ],
+    "learning_path": [
+      "Start with basic networking and security fundamentals",
+      "Learn about firewalls, VPNs, and encryption techniques",
+      "Use tools like Kali Linux and Metasploit for ethical hacking",
+      "Study incident response and cybersecurity frameworks",
+      "Get certified (CompTIA Security+, CEH, CISSP)",
+      "Work on hands-on labs and real-world threat simulations"
+    ]
+  },
+  {
+    "role": "AI/ML Engineer",
+    "skills": [
+      "Python",
+      "EDA",
+      "ML Algorithms",
+      "Deep Learning"
+    ],
+    "tools": [
+      "Jupyter",
+      "Scikit-learn",
+      "TensorFlow",
+      "Keras"
+    ],
+    "learning_path": [
+      "Learn Python and libraries like NumPy and Pandas",
+      "Perform Exploratory Data Analysis (EDA)",
+      "Understand supervised and unsupervised ML algorithms",
+      "Use Scikit-learn to train and evaluate models",
+      "Study deep learning and neural networks using TensorFlow/Keras",
+      "Work on real-world datasets and deploy ML models"
+    ]
+  },
+  {
+    "role": "Blockchain Developer",
+    "skills": [
+      "Cryptography",
+      "Smart Contracts",
+      "Data Structures",
+      "Networking"
+    ],
+    "tools": [
+      "Solidity",
+      "Ethereum",
+      "Truffle",
+      "Ganache"
+    ],
+    "learning_path": [
+      "Understand how blockchains work and their use-cases",
+      "Learn Solidity to write smart contracts",
+      "Explore Ethereum ecosystem and tools like Truffle and Ganache",
+      "Study cryptography basics and consensus algorithms",
+      "Work on building and deploying dApps",
+      "Explore roles like Blockchain Engineer or Consultant"
+    ]
+  },
+  {
+    "role": "IoT Developer",
+    "skills": [
+      "Python",
+      "Embedded Systems",
+      "Communication Protocols",
+      "Networking"
+    ],
+    "tools": [
+      "Raspberry Pi",
+      "Arduino",
+      "MQTT",
+      "CoAP"
+    ],
+    "learning_path": [
+      "Understand embedded systems architecture",
+      "Learn Python or C/C++ for IoT device programming",
+      "Study IoT communication protocols like MQTT and CoAP",
+      "Build simple projects using Raspberry Pi or Arduino",
+      "Learn cloud integration for IoT data",
+      "Explore roles like IoT Developer or IoT Solution Architect"
+    ]
+  },
+  {
+    "role": "IT Project Manager",
+    "skills": [
+      "Project Planning",
+      "Problem Solving",
+      "Basic Finance",
+      "Risk Management"
+    ],
+    "tools": [
+      "JIRA",
+      "Trello",
+      "MS Project",
+      "Slack"
+    ],
+    "learning_path": [
+      "Understand software development life cycle (SDLC)",
+      "Learn project management methodologies (Agile, Scrum)",
+      "Develop problem-solving and risk assessment skills",
+      "Understand finance basics for budgeting",
+      "Get certifications like PMP or Scrum Master",
+      "Manage small IT projects and gradually scale"
+    ]
+  },
+  {
+    "role": "Software Developer",
+    "skills": [
+      "Programming",
+      "Problem Solving",
+      "Data Structures",
+      "System Design"
+    ],
+    "tools": [
+      "VS Code",
+      "Git",
+      "Postman"
+    ],
+    "learning_path": [
+      "Learn a programming language like Python or Java",
+      "Understand OOP concepts and data structures",
+      "Build logic and problem-solving skills with coding practice",
+      "Learn version control using Git and GitHub",
+      "Work on small software projects",
+      "Gradually build knowledge of system architecture and design patterns"
+    ]
+  },
+  {
+    "role": "DevOps Engineer",
+    "skills": [
+      "Linux",
+      "CI/CD",
+      "Docker",
+      "Kubernetes",
+      "Monitoring"
+    ],
+    "tools": [
+      "Jenkins",
+      "GitHub Actions",
+      "Docker",
+      "Kubernetes",
+      "Prometheus",
+      "Grafana"
+    ],
+    "learning_path": [
+      "Learn Linux basics and shell scripting",
+      "Understand version control with Git",
+      "Learn CI/CD concepts and tools like Jenkins or GitHub Actions",
+      "Use Docker to containerize applications",
+      "Learn Kubernetes for orchestration",
+      "Set up monitoring and alerting with Prometheus and Grafana",
+      "Build and deploy automated pipelines"
+    ]
+  },
+  {
+    "role": "Data Engineer",
+    "skills": [
+      "SQL",
+      "Python",
+      "ETL",
+      "Big Data",
+      "Data Warehousing"
+    ],
+    "tools": [
+      "Airflow",
+      "Spark",
+      "Kafka",
+      "Snowflake",
+      "BigQuery"
+    ],
+    "learning_path": [
+      "Master SQL for querying and data manipulation",
+      "Learn Python for data pipelines and automation",
+      "Understand ETL concepts and data pipeline design",
+      "Work with big data tools like Spark and Kafka",
+      "Learn cloud data warehouses like Snowflake or BigQuery",
+      "Build and maintain data pipelines for real-time and batch processing"
+    ]
+  },
+  {
+    "role": "Backend Developer",
+    "skills": [
+      "APIs",
+      "Databases",
+      "Authentication",
+      "Performance Optimization"
+    ],
+    "tools": [
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "PostgreSQL",
+      "Docker"
+    ],
+    "learning_path": [
+      "Learn server-side programming using Node.js or Python",
+      "Understand RESTful APIs and how to design them",
+      "Work with databases like MongoDB and PostgreSQL",
+      "Implement authentication and authorization",
+      "Optimize backend performance and security",
+      "Deploy backend applications using Docker"
+    ]
+  },
+  {
+    "role": "UI/UX Designer",
+    "skills": [
+      "User Research",
+      "Wireframing",
+      "Prototyping",
+      "Visual Design"
+    ],
+    "tools": [
+      "Figma",
+      "Adobe XD",
+      "Sketch",
+      "Miro"
+    ],
+    "learning_path": [
+      "Understand the principles of user-centered design",
+      "Conduct user research and gather feedback",
+      "Create wireframes and interactive prototypes",
+      "Design visually appealing and accessible interfaces",
+      "Use design tools like Figma and Adobe XD",
+      "Build a strong design portfolio with real-world case studies"
+    ]
+  },
+  {
+    "role": "QA Engineer",
+    "skills": [
+      "Testing",
+      "Automation",
+      "Bug Tracking",
+      "CI/CD Integration"
+    ],
+    "tools": [
+      "Selenium",
+      "JUnit",
+      "Postman",
+      "JIRA"
+    ],
+    "learning_path": [
+      "Understand the software testing life cycle",
+      "Learn manual testing techniques and bug tracking",
+      "Write test cases and execute them using JIRA or similar tools",
+      "Learn automation testing with Selenium or JUnit",
+      "Integrate testing into CI/CD pipelines",
+      "Practice writing test scripts and automating workflows"
+    ]
+  },
+  {
+    "role": "Prompt Engineer",
+    "skills": [
+      "Prompt Design",
+      "LLM Behavior",
+      "Context Management"
+    ],
+    "tools": [
+      "OpenAI API",
+      "Claude",
+      "Gemini",
+      "LangChain"
+    ],
+    "learning_path": [
+      "Understand how LLMs like GPT work conceptually",
+      "Learn to design prompts to get consistent results",
+      "Experiment with zero-shot, few-shot, and chain-of-thought prompting",
+      "Understand how context and token limits affect responses",
+      "Work on prompt engineering challenges and competitions",
+      "Build mini-apps that use LLMs for productivity or creativity"
+    ]
+  },
+  {
+    "role": "LLM Engineer",
+    "skills": [
+      "Python",
+      "Vector Search",
+      "RAG",
+      "Prompt Tuning",
+      "Tokenization"
+    ],
+    "tools": [
+      "LangChain",
+      "LlamaIndex",
+      "FAISS",
+      "OpenAI",
+      "HuggingFace"
+    ],
+    "learning_path": [
+      "Learn how LLMs are trained and fine-tuned",
+      "Understand embeddings and vector search (FAISS, Chroma)",
+      "Build retrieval-augmented generation (RAG) systems",
+      "Use LangChain or LlamaIndex to chain LLM actions",
+      "Experiment with fine-tuning and prompt tuning",
+      "Build a production-ready LLM-powered app"
+    ]
+  },
+  {
+    "role": "GenAI Product Manager",
+    "skills": [
+      "AI Fundamentals",
+      "Product Thinking",
+      "User Research",
+      "Agile"
+    ],
+    "tools": [
+      "Notion",
+      "Figma",
+      "OpenAI",
+      "LangChain"
+    ],
+    "learning_path": [
+      "Understand how GenAI models and APIs work",
+      "Study product development lifecycle and agile methods",
+      "Conduct market research and user interviews for GenAI ideas",
+      "Collaborate with engineers to ship LLM-powered features",
+      "Use tools like Figma and Notion to design and track progress",
+      "Learn from GenAI startups and build a GenAI MVP"
+    ]
+  },
+  {
+    "role": "AI Application Developer",
+    "skills": [
+      "APIs",
+      "Frontend + Backend",
+      "Prompting",
+      "Vector DBs"
+    ],
+    "tools": [
+      "OpenAI API",
+      "Streamlit",
+      "LangChain",
+      "FAISS",
+      "Python"
+    ],
+    "learning_path": [
+      "Learn Python and API integration basics",
+      "Understand LLM APIs (GPT, Claude, etc.) and usage limits",
+      "Build UI using Streamlit or Flask for quick demos",
+      "Use embeddings and vector DBs to search knowledge bases",
+      "Integrate LLMs to create apps like chatbots, assistants, search tools",
+      "Deploy apps using platforms like Render or Hugging Face Spaces"
+    ]
+  },
+  {
+    "role": "LLM Application Engineer",
+    "skills": [
+      "LLMs",
+      "Embeddings",
+      "Retrieval-Augmented Generation",
+      "API Design"
+    ],
+    "tools": [
+      "LangChain",
+      "OpenAI",
+      "Pinecone",
+      "Vector DBs",
+      "FastAPI"
+    ],
+    "learning_path": [
+      "Understand how large language models work under the hood",
+      "Build a simple Q&A app using embeddings and vector search",
+      "Learn LangChain to chain tools and prompts together",
+      "Create RAG pipelines and deploy using FastAPI or Streamlit",
+      "Experiment with open-source models like LLaMA, Mistral",
+      "Deploy LLM-powered apps with user feedback loop"
+    ]
+  },
+  {
+    "role": "AI Product Manager",
+    "skills": [
+      "Product Strategy",
+      "LLM Capabilities",
+      "User Testing",
+      "AI Ethics"
+    ],
+    "tools": [
+      "Notion",
+      "Figma",
+      "OpenAI API",
+      "Amplitude",
+      "Jira"
+    ],
+    "learning_path": [
+      "Learn how LLMs and AI systems work at a high level",
+      "Understand user experience around AI-powered features",
+      "Design AI-first product workflows and feedback loops",
+      "Study ethical use of AI (bias, fairness, transparency)",
+      "Collaborate with engineers and designers to ship features",
+      "Track product metrics and iterate based on data"
+    ]
+  },
+  {
+    "role": "AI Research Assistant",
+    "skills": [
+      "Paper Reading",
+      "Data Analysis",
+      "Experimentation",
+      "Python",
+      "PyTorch"
+    ],
+    "tools": [
+      "arXiv",
+      "HuggingFace",
+      "Google Colab",
+      "Weights & Biases"
+    ],
+    "learning_path": [
+      "Start by reading and summarizing ML/AI research papers",
+      "Learn Python and how to run experiments with ML models",
+      "Use PyTorch or TensorFlow for experimentation",
+      "Explore datasets and reproduce paper results",
+      "Collaborate with researchers on experiments",
+      "Write clear notes, summaries, or even blogs"
+    ]
+  }
+]

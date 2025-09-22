@@ -1,0 +1,23 @@
+[
+  "Full-Stack Developer. Skills: HTML, CSS, JavaScript, Node.js, React, Next.js, Angular, MongoDB, Docker, TypeScript. Tools: VS Code, Postman, MongoDB Compass, Docker, GitHub",
+  "Java Developer. Skills: Java, OOPs, Spring Boot. Tools: Eclipse, IntelliJ IDEA, Postman, Maven",
+  "Computer Support Specialist. Skills: Troubleshooting, Hardware, Software, Networking. Tools: Remote Desktop Tools, Diagnostic Software, Ticketing Systems",
+  "Cybersecurity Analyst. Skills: Network Security, Ethical Hacking, Encryption, Incident Response. Tools: Firewalls, Antivirus Software, Kali Linux, Metasploit, John the Ripper, Nikto",
+  "AI/ML Engineer. Skills: Python, EDA, ML Algorithms, Deep Learning. Tools: Jupyter, Scikit-learn, TensorFlow, Keras",
+  "Blockchain Developer. Skills: Cryptography, Smart Contracts, Data Structures, Networking. Tools: Solidity, Ethereum, Truffle, Ganache",
+  "IoT Developer. Skills: Python, Embedded Systems, Communication Protocols, Networking. Tools: Raspberry Pi, Arduino, MQTT, CoAP",
+  "IT Project Manager. Skills: Project Planning, Problem Solving, Basic Finance, Risk Management. Tools: JIRA, Trello, MS Project, Slack",
+  "Software Developer. Skills: Programming, Problem Solving, Data Structures, System Design. Tools: VS Code, Git, Postman",
+  "DevOps Engineer. Skills: Linux, CI/CD, Docker, Kubernetes, Monitoring. Tools: Jenkins, GitHub Actions, Docker, Kubernetes, Prometheus, Grafana",
+  "Data Engineer. Skills: SQL, Python, ETL, Big Data, Data Warehousing. Tools: Airflow, Spark, Kafka, Snowflake, BigQuery",
+  "Backend Developer. Skills: APIs, Databases, Authentication, Performance Optimization. Tools: Node.js, Express, MongoDB, PostgreSQL, Docker",
+  "UI/UX Designer. Skills: User Research, Wireframing, Prototyping, Visual Design. Tools: Figma, Adobe XD, Sketch, Miro",
+  "QA Engineer. Skills: Testing, Automation, Bug Tracking, CI/CD Integration. Tools: Selenium, JUnit, Postman, JIRA",
+  "Prompt Engineer. Skills: Prompt Design, LLM Behavior, Context Management. Tools: OpenAI API, Claude, Gemini, LangChain",
+  "LLM Engineer. Skills: Python, Vector Search, RAG, Prompt Tuning, Tokenization. Tools: LangChain, LlamaIndex, FAISS, OpenAI, HuggingFace",
+  "GenAI Product Manager. Skills: AI Fundamentals, Product Thinking, User Research, Agile. Tools: Notion, Figma, OpenAI, LangChain",
+  "AI Application Developer. Skills: APIs, Frontend + Backend, Prompting, Vector DBs. Tools: OpenAI API, Streamlit, LangChain, FAISS, Python",
+  "LLM Application Engineer. Skills: LLMs, Embeddings, Retrieval-Augmented Generation, API Design. Tools: LangChain, OpenAI, Pinecone, Vector DBs, FastAPI",
+  "AI Product Manager. Skills: Product Strategy, LLM Capabilities, User Testing, AI Ethics. Tools: Notion, Figma, OpenAI API, Amplitude, Jira",
+  "AI Research Assistant. Skills: Paper Reading, Data Analysis, Experimentation, Python, PyTorch. Tools: arXiv, HuggingFace, Google Colab, Weights & Biases"
+]
