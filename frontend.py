@@ -1,7 +1,7 @@
 import streamlit as st
 
 # MUST BE FIRST STREAMLIT COMMAND
-st.set_page_config(page_title="Future Trail | Career Navigator", layout="wide", page_icon="🚀")
+st.set_page_config(page_title="Future Trail - AI Career Navigator", layout="wide", page_icon="🚀")
 
 import joblib
 import pandas as pd
@@ -250,18 +250,22 @@ def run_resume_manager():
             if st.button("🔍 Preview Text"):
                 st.session_state.show_preview = not st.session_state.show_preview
         with col3:
-            if st.button("🗑️ Remove Resume"):
-                st.session_state.uploaded_resume = None
-                st.session_state.resume_text = ""
-                st.session_state.resume_filename = ""
-                st.session_state.analysis_cache = {}
-                st.session_state.show_preview = False
-                st.rerun()
+            pass
+        
+            # if st.button("🗑️ Remove Resume"):
+            #     st.session_state.uploaded_resume = None
+            #     st.session_state.resume_text = ""
+            #     st.session_state.resume_filename = ""
+            #     st.session_state.analysis_cache = {}
+            #     st.session_state.show_preview = False
+            #     st.rerun()
         
         # Show preview if requested
         if st.session_state.show_preview:
             with st.expander("📃 Resume Text Preview", expanded=True):
                 st.text_area("Extracted Text", st.session_state.resume_text, height=200, disabled=True)
+        
+        st.divider() # <<< ADDED DIVIDER
         
         # Available analysis options
         st.markdown("### 🚀 Available Analysis")
@@ -288,18 +292,40 @@ def run_resume_manager():
     else:
         st.info("👆 Upload your resume to get started with career analysis!")
         
-        # Show sample features
+        # <<< "WHAT YOU'LL GET" SECTION MOVED HERE
         st.markdown("### 🌟 What You'll Get")
-        
-        features = [
-            "📊 **ATS Score Analysis** - See how your resume performs against applicant tracking systems",
-            "🎯 **Career Matching** - Get AI-powered career suggestions based on your experience",
-            "📚 **Learning Roadmaps** - Personalized learning paths for your target career",
-            "🔍 **Comprehensive Reports** - Complete analysis with actionable insights"
-        ]
-        
-        for feature in features:
-            st.markdown(feature)
+
+        # Define features with icons
+        features = {
+            "📊": "**ATS Score Analysis**: See how your resume performs against applicant tracking systems.",
+            "🎯": "**Career Matching**: Get AI-powered career suggestions based on your experience.",
+            "📚": "**Learning Roadmaps**: Personalized learning paths for your target career.",
+            "🔍": "**Comprehensive Reports**: Complete analysis with actionable insights."
+        }
+
+        # Create a two-column layout for the feature cards
+        col1, col2 = st.columns(2)
+
+        # Use a counter to distribute items between columns
+        i = 0
+        for icon, description in features.items():
+            if i % 2 == 0:
+                with col1:
+                    st.markdown(f"""
+                    <div style="background-color: #f8f9ff; border: 1px solid #e0e7ff; border-radius: 10px; padding: 20px; margin-bottom: 15px; height: 160px;">
+                        <p style="font-size: 1.5em; margin-bottom: 10px;">{icon}</p>
+                        <p style="font-size: 1em; color: #333;">{description}</p>
+                    </div>
+                    """, unsafe_allow_html=True)
+            else:
+                with col2:
+                    st.markdown(f"""
+                    <div style="background-color: #f8f9ff; border: 1px solid #e0e7ff; border-radius: 10px; padding: 20px; margin-bottom: 15px; height: 160px;">
+                        <p style="font-size: 1.5em; margin-bottom: 10px;">{icon}</p>
+                        <p style="font-size: 1em; color: #333;">{description}</p>
+                    </div>
+                    """, unsafe_allow_html=True)
+            i += 1
 
 def run_analysis_hub():
     """Main analysis hub with resume-based features"""
@@ -418,16 +444,16 @@ def run_ats_analysis():
                 else:
                     st.warning("Could not generate a summary for this resume.")
 
-                if suggestions_str:
-                    st.markdown("<h3 style='color: #1a237e;'>💡 Improvement Suggestions</h3>", unsafe_allow_html=True)
-                    suggestions_list = [s.strip('*-. ') for s in suggestions_str.split('\n') if s.strip()]
-                    for suggestion in suggestions_list:
-                        if suggestion:
-                            st.markdown(f"""
-                                <div style="background-color: #f0f2f6; border-left: 5px solid #3949ab; padding: 12px; margin-bottom: 10px; border-radius: 5px;">
-                                    <p style="margin: 0; font-size: 1.05em; color: #333;">{suggestion}</p>
-                                </div>
-                            """, unsafe_allow_html=True)
+                # if suggestions_str:
+                #     st.markdown("<h3 style='color: #1a237e;'>💡 Improvement Suggestions</h3>", unsafe_allow_html=True)
+                #     suggestions_list = [s.strip('*-. ') for s in suggestions_str.split('\n') if s.strip()]
+                #     for suggestion in suggestions_list:
+                #         if suggestion:
+                #             st.markdown(f"""
+                #                 <div style="background-color: #f0f2f6; border-left: 5px solid #3949ab; padding: 12px; margin-bottom: 10px; border-radius: 5px;">
+                #                     <p style="margin: 0; font-size: 1.05em; color: #333;">{suggestion}</p>
+                #                 </div>
+                #             """, unsafe_allow_html=True)
         else:
             # Fallback if parsing fails
             st.write(result)
@@ -619,25 +645,25 @@ def run_comprehensive_analysis_cached():
                         height=280,
                         margin=dict(l=10, r=10, t=50, b=10)
                     )
-                    st.plotly_chart(fig, use_container_width=True)
+                    # st.plotly_chart(fig, use_container_width=True)
                 
                 with col2:
                     if summary_match:
-                        summary = summary_match.group(1).strip()
+                        # summary = summary_match.group(1).strip()
                         st.markdown("**📝 Summary:**")
                         st.info(summary)
                     
-                    if suggestions_match:
-                        suggestions_str = suggestions_match.group(1).strip()
-                        st.markdown("**💡 Improvement Suggestions:**")
-                        if suggestions_str:
-                            suggestions_list = [s.strip('*-. ') for s in suggestions_str.split('\n') if s.strip()]
-                            for suggestion in suggestions_list[:3]:  # Show top 3 suggestions
-                                st.markdown(f"""
-                                    <div style="background-color: #f0f2f6; border-left: 5px solid #3949ab; padding: 12px; margin-bottom: 10px; border-radius: 5px;">
-                                        <p style="margin: 0; font-size: 1.05em; color: #333;">{suggestion}</p>
-                                    </div>
-                                """, unsafe_allow_html=True)
+                    # if suggestions_match:
+                    #     suggestions_str = suggestions_match.group(1).strip()
+                    #     st.markdown("**💡 Improvement Suggestions:**")
+                    #     if suggestions_str:
+                    #         suggestions_list = [s.strip('*-. ') for s in suggestions_str.split('\n') if s.strip()]
+                    #         for suggestion in suggestions_list[:3]:  # Show top 3 suggestions
+                    #             st.markdown(f"""
+                    #                 <div style="background-color: #f0f2f6; border-left: 5px solid #3949ab; padding: 12px; margin-bottom: 10px; border-radius: 5px;">
+                    #                     <p style="margin: 0; font-size: 1.05em; color: #333;">{suggestion}</p>
+                    #                 </div>
+                    #             """, unsafe_allow_html=True)
             else:
                 # Fallback if score parsing fails
                 st.write(ats_result)
@@ -658,12 +684,19 @@ def run_career_predictor():
         left_spacer, main_col, right_spacer = st.columns([1,3,1])
         with main_col:
             multi_label_inputs = {}
-            for col in mlb_dict.keys():
+            
+            # --- CHANGE 1: Filter out 'Interest_Areas' from the UI ---
+            keys_to_display = [key for key in mlb_dict.keys() if key != 'Interest_Areas']
+            
+            for col in keys_to_display:
                 options = mlb_dict[col].classes_
                 selected = st.multiselect(f"{col.replace('_', ' ')}", options, help=f"Select your {col.replace('_', ' ')}")
                 multi_label_inputs[col] = selected
+                
             preferred_style = st.selectbox("Preferred Work Style", ohe.categories_[0], help="Where do you prefer to work?")
-            problem_style = st.multiselect("Problem Solving Style", mlb_dict['Problem_Solving_Style'].classes_, help="How do you approach problems?")
+            
+            # --- CHANGE 2: Removed the duplicate 'Problem Solving Style' multiselect from here ---
+            
             masters = st.radio("Do you want to go for Masters?", ["Yes", "No"], horizontal=True)
             research = st.radio("Interested in Research?", ["Yes", "No"], horizontal=True)
             cgpa = st.slider("Current CGPA", 2.0, 10.0, 7.5, 0.1, help="Your latest CGPA")
@@ -672,15 +705,17 @@ def run_career_predictor():
 
         def prepare_input():
             feature_parts = []
+            # This loop now handles all multi-label features correctly
             for col, mlb in mlb_dict.items():
-                selected_values = multi_label_inputs[col]
+                # Use .get() to safely handle the now-missing 'Interest_Areas'
+                selected_values = multi_label_inputs.get(col, [])
                 encoded = mlb.transform([selected_values])
                 df = pd.DataFrame(encoded, columns=[f"{col}_{c}" for c in mlb.classes_])
                 feature_parts.append(df)
+            
             other_features = pd.DataFrame([{
                 **{f"Preferred_Work_Style_{cls}": 1 if cls == preferred_style else 0 for cls in ohe.categories_[0]},
-                **dict(zip([f"Problem_Solving_Style_{cls}" for cls in mlb_dict['Problem_Solving_Style'].classes_], 
-                             mlb_dict['Problem_Solving_Style'].transform([problem_style])[0])),
+                # --- CHANGE 3: Removed the redundant 'Problem_Solving_Style' processing from here ---
                 "Wants_to_Go_for_Masters": 1 if masters.lower() == "yes" else 0,
                 "Interested_in_Research": 1 if research.lower() == "yes" else 0,
                 "CGPA": cgpa,
@@ -710,15 +745,11 @@ def run_career_predictor():
     except Exception as e:
         st.error(f"Error loading models: {e}")
         st.info("Please make sure your models are trained and available in the trained-models directory.")
-
 # --- MAIN APPLICATION ---
 if st.session_state.get("authentication_status"):
     # --- LOGGED-IN VIEW ---
-    # st.title(f'Welcome Back {st.session_state["name"]}!')
-    authenticator.logout('Logout', 'sidebar')
-    
-    st.markdown('<div class="main-title">🚀 Future Trail | Career Navigator</div>', unsafe_allow_html=True)
-    
+    st.markdown('<div class="main-title">🚀 Future Trail - AI Career Navigator</div>', unsafe_allow_html=True)
+
     # Check if user is accessing analysis without uploading resume
     active_analysis = st.session_state.get("active_analysis")
     if active_analysis:
@@ -729,16 +760,30 @@ if st.session_state.get("authentication_status"):
             "📄 Resume Manager",
             "🎯 Career Predictor"
         ])
-        
+
         if page == "📄 Resume Manager":
             run_resume_manager()
         elif page == "🎯 Career Predictor":
             run_career_predictor()
+    
+    # --- Add the logout button at the end of the sidebar ---
+    authenticator.logout('Logout', 'sidebar')
 
 else:
     # --- LOGIN/REGISTER VIEW (FINAL ROBUST VERSION) ---
     st.title("Welcome to Future Trail 🚀")
     st.markdown("Please log in or register to continue.")
+    st.markdown("""
+    <div style="background-color:#f8f9ff; border-left: 5px solid #667eea; border-radius: 5px; padding: 15px 20px; margin-bottom: 20px;">
+    <h4>Unlock Your Career Potential with AI</h4>
+    <p>Future Trail helps you navigate your professional journey with confidence. Log in or create a free account to access:</p>
+    <ul>
+        <li><strong>📊 ATS Score Analysis:</strong> See how your resume stacks up against real job descriptions.</li>
+        <li><strong>🎯 AI-Powered Career Matching:</strong> Discover roles that perfectly match your skills and experience.</li>
+        <li><strong>📚 Personalized Learning Roadmaps:</strong> Get a step-by-step guide to land your dream job.</li>
+    </ul>
+    </div>
+    """, unsafe_allow_html=True)
     
     try:
         login_tab, register_tab = st.tabs(["🔐 Login", "📝 Register"])
